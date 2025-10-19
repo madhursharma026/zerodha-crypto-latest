@@ -1,0 +1,149 @@
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  width: 100%;
+  max-width: 640px;
+  animation: slideUp 0.25s ease-out;
+}
+
+.cardContainer {
+  border-radius: 6px 6px 0 0;
+  background: var(--buySellCardBg);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cardBody {
+  font-size: 14px;
+}
+
+.headerBar {
+  cursor: grab;
+  user-select: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stockName {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.exchange {
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+.toggleAndAlertBtn {
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.tabBar {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab {
+  padding: 6px 0;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+.radioLabel {
+  margin-right: 15px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.radioLabel input {
+  margin-right: 5px;
+}
+
+.advanced {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.inputBox {
+  background: repeating-linear-gradient(var(--inputDisableBg));
+  color: #aaa;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  height: 40px;
+  border: 1px solid var(--border-color);
+}
+
+.inputField {
+  border-radius: 3px;
+  width: 100%;
+  font-size: 15px;
+  height: 40px;
+  background: var(--inputBg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+
+.priceTypeBar {
+  gap: 12px;
+}
+
+.footerBar {
+  border-top: 1px solid #2c2c2c;
+  padding-top: 8px;
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+.sellBtn {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.cancelBtn {
+  font-size: 18px;
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid #727272;
+}
+
+
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+.brandGreenColor {
+  color: #5B9A5D;
+}
+
+.brandRedColor {
+  color: #E25F5B;
+}
+
+.brandGreenBorder {
+  border-color: #5B9A5D;
+}
+
+.brandRedBorder {
+  border-color: #E25F5B;
+}

@@ -1,0 +1,358 @@
+.feedsBody {
+    background: var(--bg-color);
+}
+
+.navbar {
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+}
+
+.containerSize {
+    max-width: 1300px;
+    margin: auto;
+    color: var(--text-color);
+}
+
+.containerBgForLightMode {
+    background: var(--bg-gradient-color);
+    color: var(--text-color);
+}
+
+.containerBgForDarkMode {
+    background: var(--bg-gradient-color);
+    color: var(--text-color);
+}
+
+.priceFeedsContainerWidth {
+    max-width: 1780px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.toggleDisplayInLightMode {
+    display: var(--displayToggleInLightMode);
+}
+
+.toggleDisplayInDarkMode {
+    display: var(--displayToggleInDarkMode);
+}
+
+.textColor {
+    color: var(--text-color);
+}
+
+.navMenus {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navMenus:hover {
+    background: var(--hover-color);
+    color: var(--text-color);
+}
+
+.fixedBg {
+    background-color: #ffffff;
+    /* your desired background */
+    padding: 0 10px;
+    /* optional: add some padding so bg doesn't hug content */
+    border-radius: 8px;
+    /* optional: smooth edges */
+    z-index: 1000;
+}
+
+
+.animationVideo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* .slider::before {
+    left: 0;
+    background: linear-gradient(to right, #fff, transparent);
+}
+
+.slider::after {
+    right: 0;
+    background: linear-gradient(to left, #fff, transparent);
+} */
+
+.slideTrack {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    transform: translateX(0);
+}
+
+.slide {
+    width: 10vw;
+    max-width: 120px;
+    min-width: 60px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 12px;
+    margin: 0 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+.slide img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--token-1cb18eae-2272-4f0f-ba2c-e5785bd11883, rgb(244, 244, 255));
+    border-radius: 30px;
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 3 / 4.4;
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(51, 40, 40, 0.1);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 16px;
+        max-width: 260px;
+        border-radius: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 14px;
+        max-width: 220px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .card {
+        padding: 12px;
+        max-width: 190px;
+        border-radius: 16px;
+    }
+}
+
+.blurLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f9f6f2, #f2e7df);
+    filter: blur(30px);
+    opacity: 0.3;
+}
+
+.iconWrapper {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.pairText {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #131f37;
+}
+
+.titleText {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #131f37;
+    opacity: 0.5;
+}
+
+.graph {
+    height: 120px;
+    width: 100%;
+}
+
+.valueText {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #131f37;
+    text-align: left;
+    display: block;
+}
+
+.sliderWrapper2 {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+}
+
+.gradientOverlayLeft,
+.gradientOverlayRight {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.gradientOverlayLeft {
+    left: 0;
+    background: linear-gradient(to right, var(--gradient-overlay-color));
+}
+
+.gradientOverlayRight {
+    right: 0;
+    background: linear-gradient(to left, var(--gradient-overlay-color));
+}
+
+.commodityCard {
+    border-radius: 12px;
+    background: var(--buySellCardTabBg);
+    color: var(--text-color);
+    border: 0px;
+    padding: 12px;
+}
+
+.logoCard {
+    background: var(--buySellCardTabBg);
+    color: var(--text-color);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide {
+        width: 20vw;
+    }
+}
+
+.developerContainer {
+    background: var(--developer-bg);
+    color: var(--text-color);
+}
+
+
+
+
+
+
+
+.editorCard {
+    background: var(--buySellCardTabBg);
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: "Fira Code", monospace;
+}
+
+.editorTabs {
+    background: var(--buySellCardTabBg);
+    border-bottom: 1px solid #eaeaea;
+    padding-left: 10px;
+}
+
+.editorTabs .nav-link {
+    color: #555;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: none !important;
+}
+
+.editorTabs .nav-link.active {
+    border: none !important;
+    border-bottom: 2px solid #6c63ff !important;
+    color: #000 !important;
+    background: transparent !important;
+}
+
+.codeBlock {
+    margin: 0;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: auto;
+    white-space: pre;
+    background: var(--buySellCardTabBg);
+    border-radius: 0 0 12px 12px;
+    color: var(--text-color);
+}
+
+/* Optional syntax coloring */
+code .keyword {
+    color: #d73a49;
+}
+
+code .function {
+    color: #6f42c1;
+}
+
+code .string {
+    color: #032f62;
+}
+
+code .comment {
+    color: #6a737d;
+    font-style: italic;
+}

@@ -1,0 +1,49 @@
+.footer {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 3rem 2rem;
+    font-family: sans-serif;
+}
+
+.footerLinks {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.containerSize {
+    max-width: 1300px;
+    margin: auto;
+    color: var(--text-color);
+}
+
+.footer h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.4rem;
+}
+
+/* Disclaimer section */
+.disclaimer {
+    padding: 3rem 2rem;
+}
+
+
+.toggleDisplayInLightMode {
+    display: var(--displayToggleInLightMode);
+}
+
+.toggleDisplayInDarkMode {
+    display: var(--displayToggleInDarkMode);
+}
+
+.hrColor {
+    color: var(--text-color);
+}

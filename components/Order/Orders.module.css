@@ -1,0 +1,92 @@
+.textColor {
+  color: var(--text-color);
+}
+
+.rightSidebarContainer {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.rightColumn {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100dvh - 50px);
+  padding-bottom: 100px;
+  scrollbar-width: none;
+}
+
+.tableStyle {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.cardStyle {
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.tableStyle th,
+.tableStyle td {
+  border-top: 1px solid var(--border-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+.tableStyle tbody tr:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+.tag {
+  background: var(--border-color);
+  color: var(--text-color);
+  font-size: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.buyTag {
+  background-color: #d4edda;
+  color: #5B9A5D;
+}
+
+.sellTag {
+  background-color: #f8d7da;
+  color: #E25F5B;
+}
+
+.instrumentCell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.dropdownWrapper {
+  display: none;
+}
+
+.tableStyle tbody tr:hover .dropdownWrapper {
+  display: inline-block;
+}
+
+.dropdownMenu {
+  min-width: 150px;
+  border-radius: 0;
+  font-size: 14px;
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--box-shadow) !important;
+}
+
+.dropdownText {
+  color: var(--text-colors);
+}
+
+.dropdownToggle {
+  cursor: pointer;
+  padding: 0 4px;
+}

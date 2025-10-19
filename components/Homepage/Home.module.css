@@ -1,0 +1,81 @@
+/* Keep only the custom parts */
+
+/* Border only on >= sm */
+.borderEndOnlySm {
+  border-right: none;
+}
+
+@media (min-width: 576px) {
+  .borderEndOnlySm {
+    border-right: 1px solid var(--border-color);
+  }
+}
+
+/* Scrollable right column */
+.rightColumn {
+  overflow-y: auto;
+  max-height: calc(100dvh - 50px);
+  padding-bottom: 100px;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.rightColumn::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+/* Theme-driven colors */
+.textColor {
+  color: var(--text-color);
+}
+
+.rightSidebarContainer {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Chart display toggle */
+.imgLightChart {
+  display: var(--displayImageLight);
+}
+
+.imgDarkChart {
+  display: var(--displayImageDark);
+}
+
+.profitBg {
+  color: #5B9A5D;
+}
+
+.lossBg {
+  color: #E25F5B;
+}
+
+/* Shimmer skeleton effect */
+.skeleton {
+  display: inline-block;
+  height: 1.5rem;
+  background: var(--loading-placeholder-bg);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.label {
+  display: inline-block;
+  width: 120px;
+}
+
+.chartDiv {
+  position: relative;
+}

@@ -1,0 +1,38 @@
+.rightColumn {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100dvh - 50px);
+    padding-bottom: 100px;
+    scrollbar-width: none;
+}
+
+.textColor {
+    color: var(--text-color);
+}
+
+.rightSidebarContainer {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.tableStyle {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.tableStyle th,
+.tableStyle td {
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.tableStyle tbody tr:hover {
+    background-color: var(--hover-color);
+}
+
+.cardStyle {
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+}

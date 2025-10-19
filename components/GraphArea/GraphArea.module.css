@@ -1,0 +1,565 @@
+.graphAreaBodyContainer {
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+
+.rightSidebarContainer {
+  overflow: hidden;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.graphAreaCard {
+  height: 100%;
+  background: var(--bg-color);
+}
+
+.tokenDetailsCard {
+  border: 1px solid var(--border-color);
+}
+
+.cardBody {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 14px;
+  padding: 0.75rem 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menuBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-color);
+  background: var(--border-color);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menuBtn:hover {
+  background: var(--text-color);
+  color: var(--background-color);
+}
+
+.priceLarge {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.infoGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #a0a0a0;
+  margin-bottom: 0.15rem;
+}
+
+.value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.fundingRate {
+  display: flex;
+  gap: 0.25rem;
+  font-weight: 600;
+}
+
+.fundingRateRed {
+  color: #E25F5B;
+}
+
+.fundingRateGreen {
+  color: #5B9A5D;
+}
+
+.tradeContainer {
+  border-left: 2px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 16px;
+  font-size: 14px;
+}
+
+.tradeWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leverageBox {
+  font-size: 12px;
+  background-color: #8361a3;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.tabs {
+  display: flex;
+  gap: 16px;
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.tabs span {
+  padding: 8px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.tabs .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: #EA5CF7;
+  border-radius: 2px;
+}
+
+.infoRow,
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+  color: var(--text-color);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.longBtn,
+.shortBtn {
+  width: 48%;
+  font-size: 14px;
+}
+
+.shortBtn {
+  background-color: #f87171;
+  color: white;
+  border: none;
+}
+
+.toggleWrapper {
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: var(--text-color);
+}
+
+.connectBtn {
+  background-color: #5d2e85;
+  border: none;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+.connectBtn:disabled {
+  background-color: #9b78b7;
+  opacity: 0.6;
+  cursor: not-allowed;
+  color: white;
+}
+
+.detailBox {
+  background-color: var(--bg-color);
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.accountButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.accountButtons.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.ordersContainer {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px 16px 20px 16px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.rightControls {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #888;
+}
+
+.tab {
+  color: #aaa;
+  position: relative;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: #EA5CF7;
+  border-radius: 2px;
+}
+
+.emptyState {
+  color: #888;
+  text-align: center;
+  font-size: 14px;
+  padding: 30px 0;
+}
+
+.chartHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.leftGroup,
+.rightGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tabGroup button {
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 40px;
+  white-space: nowrap;
+}
+
+.chartHeaderTab {
+  background-color: var(--buySellCardTabBg);
+  color: var(--text-color);
+  border: 2px solid var(--hover-color);
+  border-radius: 6px;
+}
+
+.chartHeaderActiveTab {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--background-color);
+  border-radius: 6px;
+}
+
+.chartHeaderTab:focus,
+.chartHeaderActiveTab:focus,
+.chartHeaderTab:active,
+.chartHeaderActiveTab:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: var(--background-color) !important;
+}
+
+@media (max-width: 768px) {
+  .chartHeaderContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leftGroup,
+  .rightGroup {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .tabGroup button {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabGroup button {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
+
+.tokenDetailCard {
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--buySellCardTabBg);
+}
+
+.customFormControl {
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--buySellCardTabBg) !important;
+}
+
+.customFormControl:focus {
+  background: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: none !important;
+  border: 2px solid var(--buySellCardTabBg) !important;
+}
+
+.borderLeftZero {
+  border-left: 0px !important;
+}
+
+.borderRightZero {
+  border-right: 0px !important;
+}
+
+.borderLeftZero:focus {
+  border-left: 0px !important;
+}
+
+.borderRightZero:focus {
+  border-right: 0px !important;
+}
+
+.leverageBox2 {
+  font-size: 12px;
+  padding: 2px 8px;
+  color: var(--text-color);
+  background: var(--buySellCardTabBg);
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tagText {
+  background-color: var(--buySellCardTabBg);
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: var(--text-color);
+  font-size: 14px;
+  display: inline;
+  white-space: nowrap;
+}
+
+.chartArea {
+  flex: 1;
+  min-width: 0;
+}
+
+.chartAreaScroll {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  height: calc(100vh - 60px);
+  position: sticky;
+  margin-top: auto;
+  scrollbar-width: none;
+}
+
+.rightSidebar {
+  width: 300px;
+  min-width: 300px;
+  overflow-y: auto;
+  background-color: var(--bg-color);
+  padding: 16px;
+  overflow-y: auto;
+  height: calc(100vh - 46px);
+  position: sticky;
+  top: 0;
+  scrollbar-width: none;
+}
+
+@media (max-width: 992px) {
+  .rightSidebar {
+    display: none;
+  }
+}
+
+.chartDiv {
+  width: 100%;
+  height: 500px;
+  min-height: 70vh;
+  min-height: 300px;
+  border: 4px solid var(--border-color);
+}
+
+.toolTipCard {
+  position: fixed;
+  top: top;
+  pointer-events: none;
+  width: 250px;
+  z-index: 1000;
+  background: var(--bg-color);
+  box-shadow: var(--PriceChart-Box-Shadow);
+  color: var(--textColor);
+  border: '0px'
+}
+
+.chartTabWrapper {
+  position: relative;
+  display: inline-flex;
+  background-color: var(--buySellCardTabBg);
+  border-radius: 8px;
+  padding: 2px;
+  gap: 0;
+  overflow: hidden;
+}
+
+.chartTabWrapper::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: calc(100% / 5);
+  height: calc(100% - 4px);
+  background-color: var(--bg-color);
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  transform: translateX(calc(var(--active-index) * 100%));
+}
+
+.chartTabGroup {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  gap: 0;
+}
+
+.chartTabGroup button {
+  position: relative;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 40px;
+  height: 32px;
+  white-space: nowrap;
+  padding: 4px 12px;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  border-radius: 6px;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.chartActiveTab {
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.tabs2 {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.tabs2 span {
+  padding: 12px 0;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  flex: 1;
+  text-align: center;
+}
+
+.tabs2 .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: #EA5CF7;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .tabs2 {
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .tabs2 span {
+    padding: 0.4rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs2 {
+    gap: 0.3rem;
+    font-size: 0.75rem;
+  }
+
+  .tabs2 span {
+    padding: 0.3rem 0;
+  }
+}
+
+.skeleton {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background: var(--loading-placeholder-bg);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}

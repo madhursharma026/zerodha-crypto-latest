@@ -1,0 +1,45 @@
+.tabContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* allow wrapping on small screens */
+  gap: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border-color);
+  overflow-x: auto;
+  /* horizontal scroll as fallback */
+  -webkit-overflow-scrolling: touch;
+  /* smooth scroll for iOS */
+  background: var(--bg-color);
+
+}
+
+.tabItem {
+  color: var(--text-color);
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  /* prevent text from breaking */
+  padding: 6px 12px;
+  font-size: clamp(13px, 2vw, 16px);
+  /* responsive font size */
+  flex-shrink: 0;
+  /* prevent shrinking on small screens */
+}
+
+.tabItem:hover {
+  color: #E25F5B;
+}
+
+.active {
+  color: #E25F5B;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #E25F5B;
+}
