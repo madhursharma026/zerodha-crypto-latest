@@ -1,0 +1,58 @@
+.smallFontSize {
+  font-size: 9px;
+}
+
+.mediumFontSize {
+  font-size: 12.99px;
+}
+
+.containerWidthGlobalCSS {
+  max-width: 1525px;
+  margin: 0 auto;
+}
+
+.rightSidebarScrollContainer {
+  overflow-y: auto;
+  max-height: calc(100vh);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-color) transparent;
+}
+
+@media (max-width: 1600px) {
+  .containerWidthGlobalCSS {
+    max-width: 1435px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1460px) {
+  .containerWidthGlobalCSS {
+    margin: 0 10px;
+  }
+}
+
+.brandGreenColor {
+  color: #5B9A5D;
+}
+
+.brandRedColor {
+  color: #E25F5B;
+}
+
+.brandGreenBorder {
+  border-color: #5B9A5D;
+}
+
+.brandRedBorder {
+  border-color: #E25F5B;
+}
+
+.brandRedBtn {
+  background-color: #E25F5B;
+  color: white;
+  border: none;
+}
+
+.brandRedBtn:hover {
+  background-color: #d95552;
+}
